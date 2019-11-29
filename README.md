@@ -1,1 +1,1 @@
-# proqti
+# Proeqti
