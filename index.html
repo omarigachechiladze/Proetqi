@@ -19,96 +19,89 @@
             <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    </body>
+    
         <header>
-                <nav class="navbar navbar-expand-md navbar-dark py-0" style="background-color: rgb(23, 27, 31)!important; padding-right: 0px;">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <a class="navbar-brand p-0" href="#">
-                        <img src="https://pbs.twimg.com/profile_images/966712135320522755/-X_aa_Zw_400x400.jpg" style="padding-right: 1px;" height="55px">
-                        </a>
-                        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                        <ul class="navbar-nav mr-auto" style="font-size: 24px;">
-                        <li class="nav-item py-2">
-                        </li>
-                        </ul>
-                        <ul class="navbar-nav">
-                        <li class="nav-item py-2 bg-hover">
-                        <a class="nav-link" target="_blank" style="padding-right: 1rem;" href="https://steamcommunity.com/id/-omo4113/inventory/#753">
-                        <i class="fas fa-archive" aria-hidden="true"></i> INVENTORY</a>
-                        </li>
-                        
-                        <li class="nav-item py-2 bg-hover">
-                        <a class="nav-link" target="_blank" style="padding-right: 1rem;" href="https://help.steampowered.com/en/">
-                        <i class="fas fa-inventory" aria-hidden="true"></i> SUPPORT</a> </i>
-                        </li>
-                        <li class="nav-item py-2 bg-hover">
-                        <a class="nav-link"  target="_blank" style="padding-right: 1rem;" href="https://steamprofiledesign.com/guides/#Achievements">
-                        <i class="icon-question icons"aria-hidden="true"></i> GUIDE</a>
-                        </li>
-                        <li class="nav-item dropdown bg-hover py-2">
-                        <div class="nav-link dropdown-toggle" data-toggle="dropdown">
-                        <img width="25" src="static/img/flag-en.svg">
-                        </div>
-                        <div class="dropdown-menu" style="min-width: 41px; background-color: #21242d; top: 80%; border: none; padding-left: 8px; ">
-                        <div><img class="flag-dropdown" onclick="if (!window.__cfRLUnblockHandlers) return false; setLocale('en')" src=""> </div>
-                        <div><img class="flag-dropdown" onclick="if (!window.__cfRLUnblockHandlers) return false; setLocale('cn')" src="static/img/flag-cn.svg"> </div>
-                        
-                        <div><img class="flag-dropdown" onclick="if (!window.__cfRLUnblockHandlers) return false; setLocale('ru')" src="static/img/flag-ru.svg"> </div>
-                        </div>
-                        </li>
-                        </ul>
-                        <ul class="navbar-nav mr-3" style="" id="currencyselect">
-                        <li class="nav-item dropdown">
-                        <div class="nav-link dropdown-toggle" id="currency-selector" data-toggle="dropdown" style="cursor: pointer">$ USD</div>
-                        <div class="dropdown-menu" style="max-height: 200px; overflow-x: hidden">
-                        <div class="dropdown-item currency-item" data-currency="USD" style="display: none;">$ USD</div>
-                        <div class="dropdown-item currency-item" data-currency="EUR">€ EUR</div>
-                        <div class="dropdown-item currency-item" data-currency="GBP">£ GBP</div>
-                        <div class="dropdown-item currency-item" data-currency="RUB">₽ RUB</div>
-                        <div class="dropdown-item currency-item" data-currency="PHP">₱ PHP</div>
-                        <div class="dropdown-item currency-item" data-currency="AUD">$ AUD</div>
-                        <div class="dropdown-item currency-item" data-currency="BGN">лв BGN</div>
-                        <div class="dropdown-item currency-item" data-currency="BRL">R$ BRL</div>
-                        <div class="dropdown-item currency-item" data-currency="CAD">$ CAD</div>
-                        <div class="dropdown-item currency-item" data-currency="CHF">Fr CHF</div>
-                        <div class="dropdown-item currency-item" data-currency="CNY">¥ CNY</div>
-                        <div class="dropdown-item currency-item" data-currency="CZK">Kč CZK</div>
-                        <div class="dropdown-item currency-item" data-currency="DKK">kr DKK</div>
-                        <div class="dropdown-item currency-item" data-currency="HKD">元 HKD</div>
-                        <div class="dropdown-item currency-item" data-currency="HRK">$ HRK</div>
-                        <div class="dropdown-item currency-item" data-currency="HUF">Ft HUF</div>
-                        <div class="dropdown-item currency-item" data-currency="IDR">Rp IDR</div>
-                        <div class="dropdown-item currency-item" data-currency="ILS">₪ ILS</div>
-                        <div class="dropdown-item currency-item" data-currency="INR">₹ INR</div>
-                        <div class="dropdown-item currency-item" data-currency="JPY">¥ JPY</div>
-                        <div class="dropdown-item currency-item" data-currency="KRW">₩ KRW</div>
-                        <div class="dropdown-item currency-item" data-currency="MXN">$ MXN</div>
-                        <div class="dropdown-item currency-item" data-currency="MYR">RM MYR</div>
-                        <div class="dropdown-item currency-item" data-currency="NOK">kr NOK</div>
-                        <div class="dropdown-item currency-item" data-currency="NZD">$ NZD</div>
-                        <div class="dropdown-item currency-item" data-currency="PLN">zł PLN</div>
-                        <div class="dropdown-item currency-item" data-currency="RON">L RON</div>
-                        <div class="dropdown-item currency-item" data-currency="SEK">kr SEK</div>
-                        <div class="dropdown-item currency-item" data-currency="SGD">$ SGD</div>
-                        <div class="dropdown-item currency-item" data-currency="THB">฿ THB</div>
-                        <div class="dropdown-item currency-item" data-currency="TRY">₺ TRY</div>
-                        <div class="dropdown-item currency-item" data-currency="ZAR">R ZAR</div>
-                        </div>
-                        </li>
-                        </ul>
-                        <ul class="navbar-nav mr-3" style="color: #c7ced4;">
-                         <a href="https://steamcommunity.com/login/home/?goto=login%2Fhome%2F%3Fgoto%3Dopenid%252Flogin%253Fopenid.mode%253Dcheckid_setup%2526openid.ns%253Dhttp%25253A%25252F%25252Fspecs.openid.net%25252Fauth%25252F2.0%2526openid.ns.sreg%253Dhttp%25253A%25252F%25252Fopenid.net%25252Fextensions%25252Fsreg%25252F1.1%2526openid.sreg.optional%253Dnickname%25252Cemail%25252Cfullname%25252Cdob%25252Cgender%25252Cpostcode%25252Ccountry%25252Clanguage%25252Ctimezone%2526openid.ns.ax%253Dhttp%25253A%25252F%25252Fopenid.net%25252Fsrv%25252Fax%25252F1.0%2526openid.ax.mode%253Dfetch_request%2526openid.ax.type.fullname%253Dhttp%25253A%25252F%25252Faxschema.org%25252FnamePerson%2526openid.ax.type.firstname%253Dhttp%25253A%25252F%25252Faxschema.org%25252FnamePerson%25252Ffirst%2526openid.ax.type.lastname%253Dhttp%25253A%25252F%25252Faxschema.org%25252FnamePerson%25252Flast%2526openid.ax.type.email%253Dhttp%25253A%25252F%25252Faxschema.org%25252Fcontact%25252Femail%2526openid.ax.required%253Dfullname%25252Cfirstname%25252Clastname%25252Cemail%2526openid.identity%253Dhttp%25253A%25252F%25252Fspecs.openid.net%25252Fauth%25252F2.0%25252Fidentifier_select%2526openid.claimed_id%253Dhttp%25253A%25252F%25252Fspecs.openid.net%25252Fauth%25252F2.0%25252Fidentifier_select%2526openid.return_to%253Dhttps%25253A%25252F%25252Fsteamtrade.gg%25252Fauth%25252Fsteam%25252Freturn%2526openid.realm%253Dhttps%25253A%25252F%25252Fsteamtrade.gg%25252F" class="mr-3" onclick="if (!window.__cfRLUnblockHandlers) return false; fireLoginEvent('navbar_mainpage')">
-                          <button class="btn btn-success steamlogin my-2 my-sm-0" type="submit"></button>            
-                        </a>
-                        </ul>
-                        </div>
-                        </nav>
-                      
-                    </div>
-                  </nav>
-                
+        <section>
+            <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+                <h5 class="my-0 mr-md-auto font-weight-normal">Tradeit.gg</h5>
+                <nav class="my-2 my-md-0 mr-md-3">
+                  <a class="p-2 text-dark" href="https://steamcommunity.com/">Features</a>
+                  <a class="p-2 text-dark" href="https://support.steampowered.com/kb_article.php?p_faqid=301">Security</a>
+                  <a class="p-2 text-dark" href="https://help.steampowered.com/en/wizard/Login?redir=%2Fen%2Fwizard%2FHelpWithCommunity&title=Sign+in">Support</a>
+                  <a class="p-2 text-dark" href="https://steamcommunity.com/market/search?appid=730&q=M9+">Pricing</a>
+                </nav>
+                <a class="btn btn-outline-primary" href="https://steamcommunity.com/login/home/?goto=market%2Fsearch%3Fappid%3D730%26q%3DM9%2B">Sign up</a>
+              </div>
+
+              <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                <h1 class="display-4">Traiding item</h1>
+                <p class="lead">Held-For-Trading Security
+                    Debt and equity investments that are purchased with the intent of selling them within a short period of time (usually less than one year). Accounting standards necessitate that companies classify any investments in debt or equity securities when they are purchased. The investments can be classified as: held to maturity, held for trading or available for sale. Held-for-trading securities (or simply trading securities) are considered short-term assets, and their accounting is handled as such. Gains and losses resulting from changes in the investment's value are recorded as gains and losses on an income statement.
+                    Held for trading securities include debt and equity instruments that are held for short periods of time, purchased with the intention of profiting from short-term price changes. They are purchased with the intention of selling them in the near term. These debt and equity investments are reported at fair value, and unrealized gains and/or losses are included in earnings.</p>
+              </div>
+            </section>
+            <section>
+                     <div class="container">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img src="https://dmarket.com/blog/most-expensive-steam-items/thumb.jpg" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="https://i.ytimg.com/vi/syHGb86j8Fw/maxresdefault.jpg" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="https://www.tradersdna.com/wp-content/uploads/2019/09/forex-trading.jpg" class="d-block w-100" alt="...">
+                                      </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Next</span>
+                                    </a>
+                                  </div>
+                          </div>
+                          
+               </section>
+               <section>
+                    <div class="card-group">
+                            <div class="card">
+                              <img src="https://cs11.livemaster.ru/storage/topicavatar/600x450/23/76/83f1cae52da8546f7184b19d7a8bf8f71f011c.png?h=ZiCTOUoFpFTiPJpoTksjWA" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Make a Payment in a few seconds.</h5>
+                                <p class="card-text">You can send payments to almost anyone in exchange for goods and services, without sharing your financial information with the sellers. Use their email address and they'll get the payment in a simple, faster and more secure way.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <img src="https://bitopen.ru/images/55.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Visa&mastercard</h5>
+                                <p class="card-text">As a merchant, you accept more and more payments digitally every day, yet you need to ensure that every transaction is secure. Mastercard Identity Check leverages the latest authentication standards of EMV® 3-D Secure (replacing 3DS 1.0) to complete more transactions without disruption.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <img src="https://web.extension.illinois.edu/photo/photolib/lib3190/online-banking-3559760_1920.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Online banking</h5>
+                                <p class="card-text">Banking transactions offered online vary by the institution. Most banks generally offer basic services such as transfers and bill payments. Some banks also allow customers to open up new accounts and apply for credit through online banking portals. Other functions may include ordering checks, putting stop payments on checks, or reporting a change of address.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              </div>
+                            </div>
+                          </div>
+               </section>
+
+             
+            </body>
           </header>
           
 
